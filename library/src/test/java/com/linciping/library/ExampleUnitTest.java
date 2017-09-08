@@ -1,4 +1,4 @@
-package linciping.com.library;
+package com.linciping.library;
 
 import org.junit.Test;
 

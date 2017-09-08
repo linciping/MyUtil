@@ -1,4 +1,4 @@
-package linciping.com.library;
+package com.linciping.library;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
