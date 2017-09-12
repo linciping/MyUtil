@@ -2,13 +2,13 @@ package com.linciping.library;
 
 import java.util.Collection;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author linciping
- *         2017/9/7
- *         检查工具
+ * 2017/9/7
+ * 检查工具
  */
-
 public class CheckUtil {
     /**
      * 判断字符串是否为空
@@ -41,30 +41,6 @@ public class CheckUtil {
     }
 
     /**
-     * 处理字符串
-     *
-     * @param content 需要处理的字符串
-     * @return 如果为空，返回""，不然返回content
-     */
-    public static String commonString(String content) {
-        return commonString(content, "");
-    }
-
-    /**
-     * 处理字符串，
-     *
-     * @param content        需要处理的字符串
-     * @param defaultContent 默认字符
-     * @return 如果为空，返回defaultContent，不然返回content
-     */
-    public static String commonString(String content, String defaultContent) {
-        if (isStringEmpty(content)) {
-            return defaultContent;
-        }
-        return content;
-    }
-
-    /**
      * 判断对象数组是否为空
      *
      * @param array 需要判断的对象数组
@@ -73,5 +49,15 @@ public class CheckUtil {
      */
     public static <T> boolean isArrayEmpty(T[] array) {
         return array == null || array.length <= 0;
+    }
+
+    /**
+     * 判断set是否为空
+     *
+     * @param set 需要判断的set对象
+     * @return 如果set为空返回 true,不然返回false
+     */
+    public static boolean isSetEmpty(Set<?> set) {
+        return set == null || set.size() <= 0;
     }
 }
