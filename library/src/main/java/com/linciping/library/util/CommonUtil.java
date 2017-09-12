@@ -1,4 +1,6 @@
-package com.linciping.library;
+package com.linciping.library.util;
+
+import com.linciping.library.util.CheckUtil;
 
 import java.util.Collection;
 import java.util.Map;
@@ -7,7 +9,7 @@ import java.util.Set;
 /**
  * @author linciping
  * @time 2017/9/12
- * @note
+ * @note 通用工具
  */
 
 public class CommonUtil {

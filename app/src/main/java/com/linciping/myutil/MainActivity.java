@@ -1,14 +1,11 @@
 package com.linciping.myutil;
 
-import android.icu.util.MeasureUnit;
-import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.linciping.library.FileController;
-import com.linciping.library.FileUtil;
+import com.linciping.library.util.FileUtil;
 import com.linciping.library.exception.CreateFileException;
 import com.linciping.library.exception.PermissionException;
 import com.linciping.library.exception.SDCardNoFoundException;

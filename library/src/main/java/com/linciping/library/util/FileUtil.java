@@ -1,4 +1,4 @@
-package com.linciping.library;
+package com.linciping.library.util;
 
 import android.Manifest;
 import android.content.Context;
@@ -6,18 +6,21 @@ import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.support.v4.content.ContextCompat;
 
+import com.linciping.library.constant.Constant;
+import com.linciping.library.FileController;
+import com.linciping.library.constant.MessageKeyConstant;
 import com.linciping.library.exception.CreateFileException;
 import com.linciping.library.exception.PermissionException;
 import com.linciping.library.exception.SDCardNoFoundException;
 
 import java.io.File;
 
-import static com.linciping.library.MessageConstant.*;
+import static com.linciping.library.constant.MessageConstant.*;
 
 /**
  * @author linciping
- *         2017/9/8
- *         文件工具
+ * @time 2017/9/8
+ * @note 文件工具
  */
 public class FileUtil {
 
@@ -154,6 +157,19 @@ public class FileUtil {
     }
 
     /**
+     * 创建APP音频目录
+     *
+     * @param context 上下文对象
+     * @return 如果存在返回APP音频目录，不然返回SD卡不存在/创建目录失败
+     * @throws SDCardNoFoundException {@link SDCardNoFoundException}  sd卡不存在异常
+     * @throws CreateFileException    {@link CreateFileException}  创建文件异常
+     * @throws PermissionException    {@link PermissionException} 权限异常
+     */
+    public static String getAppAudioPath(Context context) throws CreateFileException, SDCardNoFoundException, PermissionException {
+        return getAppDivPath(context, Constant.AUDIO_PATH);
+    }
+
+    /**
      * 创建APP视频目录
      *
      * @param context 上下文对象
@@ -196,6 +212,17 @@ public class FileUtil {
     public static void getAppVideoPath(Context context, FileController fileController) {
         getAppDivPath(context, Constant.VIDEO_PATH, fileController);
     }
+
+    /**
+     * 创建APP音频目录
+     *
+     * @param context        上下文对象
+     * @param fileController 回调对象
+     */
+    public static void getAppAudioPath(Context context, FileController fileController) {
+        getAppDivPath(context, Constant.AUDIO_PATH, fileController);
+    }
+
 
     /**
      * 创建APP自定义功能目录(回调接口)

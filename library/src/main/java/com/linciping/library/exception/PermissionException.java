@@ -1,12 +1,12 @@
 package com.linciping.library.exception;
 
-import com.linciping.library.MessageConstant;
+import com.linciping.library.constant.MessageConstant;
 
 /**
  * @author linciping
- *         2017/9/11
+ * @time 2017/9/11
+ * @note 权限异常
  */
-
 public class PermissionException extends Exception {
 
     public PermissionException() {

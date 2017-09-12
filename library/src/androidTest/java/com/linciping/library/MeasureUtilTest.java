@@ -3,12 +3,11 @@ package com.linciping.library;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
-import android.util.Log;
+
+import com.linciping.library.util.MeasureUtil;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import static org.junit.Assert.*;
 
 /**
  * @author linciping
@@ -19,7 +18,7 @@ public class MeasureUtilTest {
     @Test
     public void getWindowWidth() throws Exception {
         Context appContext = InstrumentationRegistry.getTargetContext();
-        System.out.println("screen width"+MeasureUtil.getWindowWidth(appContext));
+        System.out.println("screen width"+ MeasureUtil.getWindowWidth(appContext));
     }
 
     @Test

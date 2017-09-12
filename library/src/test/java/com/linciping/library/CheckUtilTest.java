@@ -1,8 +1,8 @@
 package com.linciping.library;
 
-import org.junit.Test;
+import com.linciping.library.util.CheckUtil;
 
-import java.util.Scanner;
+import org.junit.Test;
 
 
 /**

@@ -3,7 +3,7 @@ package com.linciping.library;
 /**
  * @author linciping
  * @date 2017/9/8
- * 文件控制器
+ * @note 文件控制器
  */
 public interface FileController {
 

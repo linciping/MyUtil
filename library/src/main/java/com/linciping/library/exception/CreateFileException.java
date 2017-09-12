@@ -1,14 +1,14 @@
 package com.linciping.library.exception;
 
-import com.linciping.library.MessageConstant;
+import com.linciping.library.constant.MessageConstant;
 
 import java.io.IOException;
 
 /**
  * @author linciping
- *         2017/9/11
+ * @time 2017/9/11
+ * @note 创建文件异常
  */
-
 public class CreateFileException extends IOException {
 
     public CreateFileException() {

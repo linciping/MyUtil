@@ -1,5 +1,5 @@
 
-package com.linciping.library;
+package com.linciping.library.constant;
 
 /**
  * @author linciping
