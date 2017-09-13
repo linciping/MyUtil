@@ -1,7 +1,5 @@
 package com.linciping.library.util;
 
-import com.linciping.library.util.CheckUtil;
-
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;

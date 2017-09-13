@@ -1,5 +1,9 @@
 package com.linciping.library.util;
 
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.support.v4.content.ContextCompat;
+
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
@@ -59,5 +63,18 @@ public class CheckUtil {
      */
     public static boolean isSetEmpty(Set<?> set) {
         return set == null || set.size() <= 0;
+    }
+
+    /**
+     * 是否拥有某个权限
+     * @param context 上下文
+     * @param permission 权限字符
+     * @return 如果拥有权限返回true，不然返回false
+     */
+    public static boolean havePermission(Context context, String permission) {
+        if (ContextCompat.checkSelfPermission(context, permission) == PackageManager.PERMISSION_GRANTED) {
+            return true;
+        }
+        return false;
     }
 }

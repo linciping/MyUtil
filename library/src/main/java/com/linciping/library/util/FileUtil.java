@@ -6,8 +6,8 @@ import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.support.v4.content.ContextCompat;
 
-import com.linciping.library.constant.Constant;
 import com.linciping.library.FileController;
+import com.linciping.library.constant.Constant;
 import com.linciping.library.constant.MessageKeyConstant;
 import com.linciping.library.exception.CreateFileException;
 import com.linciping.library.exception.PermissionException;
@@ -15,7 +15,9 @@ import com.linciping.library.exception.SDCardNoFoundException;
 
 import java.io.File;
 
-import static com.linciping.library.constant.MessageConstant.*;
+import static com.linciping.library.constant.MessageConstant.CREATE_FILE_ERROR;
+import static com.linciping.library.constant.MessageConstant.PERMISSION_NO_ALLOW;
+import static com.linciping.library.constant.MessageConstant.SDCARD_NO_EXIST;
 
 /**
  * @author linciping
