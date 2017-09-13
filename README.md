@@ -1,7 +1,7 @@
 MyUtil
 ===========
 
-[ ![Download](https://github.com/linciping/MyUtil/releases/tag/1.2.2) ]
+[ ![Download](https://github.com/linciping/MyUtil/releases/tag/1.2.3) ]
 
 个人工具整理，主要是平时常用的一些工具类
 
@@ -19,7 +19,7 @@ allprojects {
 
 ```groovy
 dependencies {
-  compile 'com.github.linciping:MyUtil:1.2.2'
+  compile 'com.github.linciping:MyUtil:1.2.3'
 }
 ```
 
