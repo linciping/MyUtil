@@ -309,7 +309,7 @@ public class FileUtil {
             String sdCardPath = Environment.getExternalStorageDirectory().getPath();
             appPath = sdCardPath + File.separator + context.getPackageName();
             File file = new File(appPath);
-            if (ContextCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_DENIED) {
+            if (!CheckUtil.havePermission(context,Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
                 return MessageKeyConstant.PERMISSION_NO_ALLOW;
             } else if (!file.exists() && file.mkdir()) {
                 return MessageKeyConstant.SUCCESS;
